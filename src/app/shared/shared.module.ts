@@ -4,13 +4,15 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { ButtonComponent } from './button/button.component';
+import { BrandComponent } from './brand/brand.component';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    ButtonComponent
+    ButtonComponent,
+    BrandComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { ButtonComponent } from './button/button.component';
   ],
   exports: [
     HeaderComponent,
-    ButtonComponent
+    ButtonComponent,
+    BrandComponent
   ]
 })
 export class SharedModule { }
