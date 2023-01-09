@@ -1,10 +1,12 @@
-<app-header></app-header>
+<!-- Header -->
+<header></header>
+
 <!-- Hero -->
 <section class="main-bg min-h-[700px] p-20">
   <div class="flex flex-wrap items-center justify-around gap-32 in-content">
-    <div class="flex flex-col items-center text-center ">
+    <div class="relative flex flex-col items-center text-center">
       <p class="mb-4 font-bold text-7xl">SISDM</p>
-
+      <ornament src="/assets/images/square-stars-w.svg" class="absolute -top-20 -left-52"></ornament>
       <p class="mb-14 text-4xl font-bold text-neutral1  max-w-[30rem]">Une Solution en ligne pour vos besoins médicaux</p>
 
       <div>
@@ -23,9 +25,13 @@
   <h3 class="m-16 text-4xl font-bold text-center text-primary5">Pourquoi nous choisir?</h3>
   <div class="flex flex-col gap-4 lg:gap-8">
     <div class="flex flex-wrap-reverse justify-center gap-8 lg:gap-32">
-      <img src="/assets/images/features1.jpg" alt="A doctor" class="w-[500px] h-[550px] object-cover"/>
+      <div class="relative">
+        <ornament src="/assets/images/circle-waves.svg" class="absolute -top-20 -left-44 -z-10"></ornament>
+        <img src="/assets/images/features1.jpg" alt="A doctor" class="w-[500px] h-[550px] object-cover"/>
+      </div>
 
       <div class="flex-col max-w-[450px] items-center break-words text-center">
+
         <h4 class="mt-10 mb-2 text-2xl font-bold text-primary5">Nos Experts</h4>
 
         <p class="text-xl">
@@ -35,14 +41,18 @@
   </div>
 
   <div class="flex flex-wrap justify-center gap-8 lg:gap-32">
-    <div class="flex-col max-w-[450px] items-center break-words text-center">
+
+    <div class="flex-col max-w-[450px] items-center break-words text-center relative">
       <h4 class="mt-10 mb-2 text-2xl font-bold text-primary5">Applications</h4>
 
       <p class="text-xl">
         Notre application de consultation en ligne offre une expérience de consultation de qualité grâce à notre panel d'experts médicaux qualifiés et expérimentés. Nous avons également mis en place un système de gestion de dossiers médicaux sécurisé pour garantir la confidentialité de vos informations médicales. Toutes les données sont stockées de manière sécurisée et cryptée, et uniquement accessibles aux experts médicaux autorisés. Vous pouvez accéder à votre dossier médical en toute sécurité à tout moment grâce à notre interface simple et intuitive.
       </p>
     </div>
-    <img src="/assets/images/features2.jpg" alt="A user" class="w-[500px] h-[550px] object-cover"/>
+    <div class="relative">
+      <ornament src="/assets/images/square-stars.svg" class="absolute -right-48 -top-20 -z-10"></ornament>
+      <img src="/assets/images/features2.jpg" alt="A user" class="w-[500px] h-[550px] object-cover"/>
+    </div>
   </div>
 </div>
 </section>
@@ -50,7 +60,7 @@
 <!-- Footer -->
 <footer class="bg-primary7" >
   <div class="flex justify-between min-h-[60vh] p-[3rem] in-content">
-    <app-brand></app-brand>
+    <brand></brand>
     <div>
       <h3 class="text-xl text-yellow3">FAQS</h3>
     </div>
